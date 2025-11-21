@@ -320,9 +320,9 @@
             margin-top: 40px;
            
   
-  overflow-x: auto;       /* LEFT + RIGHT scroll */
+  overflow-x: auto; 
+  white-space: nowrap;      /* LEFT + RIGHT scroll */
   overflow-y: hidden;
-  white-space: nowrap;
   padding-bottom: 20px;
   scroll-behavior: smooth;
         }
@@ -425,9 +425,7 @@
 /* Fixed top-left view button */
 .view-btn {
  position: relative;
-  top: 100px;
-  left: 1700px;
-  padding: 5px 18px;
+  padding: 8px 18px;
   background: #007bff;
   color: white;
   border: none;
@@ -438,58 +436,13 @@
 }
 /* Card width fix */
 .card {
-  min-width: 300px;   /* horizontal scroll साठी */
+  min-width: 100px;   /* horizontal scroll साठी */
 }
 
 /* Hidden cards */
 .hidden {
   display: none;
 }
-
-
-   /* ---- Background Video ----
-.bg-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}*/
-
-/* ---- HERO SECTION ---- 
-.hero-section {
-    position: relative;
-    height: 100vh;        /* Desktop full height 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    overflow: hidden;
-}
-
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.25); /* dark filter
-    z-index: 0;
-}*/
-
-/* hero content 
-.hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 900px;
-    padding: 0 20px;
-}*/
-
 /* -------- Mobile Fix -------- */
 @media (max-width: 768px) {
     .hero-section {
